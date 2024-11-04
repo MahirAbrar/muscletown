@@ -13,17 +13,11 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Navbar />
-        <Routes>
-          <Route index path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </div>
+    <div className="App">
+      <Navbar />
+      <Home />
       <Footer />
-    </Router>
+    </div>
   );
 }
 
