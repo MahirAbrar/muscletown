@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-background-primary dark:bg-background-secondary fixed w-full z-20 top-0 start-0 border-b-4 border-brand-primary">
+    <nav className=" bg-background-primary dark:bg-background-secondary sticky w-full z-20 top-0 start-0 border-b-4 border-brand-primary">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           to="/"
