@@ -52,9 +52,9 @@ const Home = () => {
   const isInView = useInView(sponsorRef, { once: true });
 
   return (
-    <div className="h-screen overflow-y-scroll bg-background-primary dark:bg-background-secondary">
+    <div className="bg-background-primary dark:bg-background-secondary">
       <Section id="home" bgClass="bg-none" height="h-[800px] lg:h-[600px]">
-        <div className="h- container mx-auto items-center justify-center px-6">
+        <div className="container mx-2 h-full items-center justify-center px-6 xl:mx-auto">
           <div className="flex flex-wrap items-center justify-between gap-2 lg:flex-nowrap">
             {/* Left side */}
             <div className="flex w-full flex-col space-y-10 pl-0 pt-12 lg:w-1/2 lg:pl-4 lg:pt-0">
@@ -86,11 +86,11 @@ const Home = () => {
             </div>
 
             {/* Right side */}
-            <div className="flex h-[380px] w-full justify-center lg:h-[600px]">
+            <div className="flex h-[380px] w-full justify-center md:justify-end lg:h-[600px]">
               <img
                 src="/heroImage.png"
                 alt="Fitness training"
-                className="relative z-10 h-full w-screen"
+                className="relative z-10"
               />
             </div>
           </div>
@@ -137,7 +137,7 @@ const Home = () => {
             initial={{ opacity: 0, x: -100 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }}
             transition={{ duration: 0.5, delay: 0.8 }}
-            src="/SponsorRedBull.png"
+            src="/redbullenergydrink.svg"
             alt="RedBull"
             className="h-12 object-contain md:h-16 lg:h-20"
           />
@@ -145,9 +145,61 @@ const Home = () => {
       </Section>
 
       <Section id="about" bgClass="bg-none">
-        <h1 className="pt-20 text-center text-4xl font-bold text-brand-primary dark:text-brand-secondary">
+        <h1 className="m-4 text-center text-4xl font-bold text-brand-primary dark:text-brand-secondary">
           More than just a gym, a community
         </h1>
+        <p>
+          We provide the best fitness equipment, trainers and calsses to get to
+          your ultimate fitness goals with ease. We provide true care for each
+          and every member
+        </p>
+
+        <div>
+          <div>
+            <h3>State of the Art Facilities</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis ratione sint eius obcaecati aspernatur consequuntur,
+              omnis nisi enim, in explicabo fugit aperiam magni. Ipsam animi in
+              cum, sunt alias quis.
+            </p>
+          </div>
+          <div>
+            <h3>100's of Diverse Classes</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis ratione sint eius obcaecati aspernatur consequuntur,
+              omnis nisi enim, in explicabo fugit aperiam magni. Ipsam animi in
+              cum, sunt alias quis.
+            </p>
+          </div>
+          <div>
+            <h3>Expert of Pro Trainers</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis ratione sint eius obcaecati aspernatur consequuntur,
+              omnis nisi enim, in explicabo fugit aperiam magni. Ipsam animi in
+              cum, sunt alias quis.
+            </p>
+          </div>
+        </div>
+        <div>
+          {/* left */}
+          <div>
+            <img src="/BenefitsPageGraphic.png" alt="" />
+          </div>
+
+          {/* right */}
+          <div>
+            <h2>Millions of happy members getting fit</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
+              culpa distinctio id minima ipsam corrupti optio magnam, blanditiis
+              error nihil! Quia repudiandae, iusto ab quos id dignissimos maxime
+              quas laborum!
+            </p>
+          </div>
+        </div>
       </Section>
 
       <Section
